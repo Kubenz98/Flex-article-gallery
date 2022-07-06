@@ -1,0 +1,67 @@
+.menu {
+    margin-bottom: 20px;
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        background-color: $menu-color;
+    }
+
+    // &__item {}
+
+    &__link {
+        margin-left: 30px;
+        padding: 10px;
+        line-height: 50px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        transition: 0.3s;
+
+        &:hover {
+            color: #CCB8C2;
+        }
+
+        @include mq(medium) {
+            font-size: 28px;
+            line-height: 65px;
+        }
+    }
+
+    &__searcher {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+
+        &-input {
+            padding: 5px;
+            border: 1px solid #bbb;
+            margin-right: 10px;
+
+            @include mq(medium) {
+                font-size: 20px;
+            }
+        }
+
+    }
+}
+
+.button--searcher {
+    text-transform: uppercase;
+    padding: 7px 15px;
+    color: #555;
+    border-color: #555;
+
+    @include desktopHover {
+        &:hover {
+            background-color: #555;
+            color: white;
+        }
+    }
+
+    @include mq(medium) {
+        font-size: 18px;
+    }
+}

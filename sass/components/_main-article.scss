@@ -1,0 +1,47 @@
+.main-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding: 10px;
+    margin: 20px auto;
+    background-color: $menu-color;
+    color: $main-text-color;
+    box-shadow: 0 0 5px 2px black;
+    &__img {
+        margin-top: 10px;
+        width: 90%;
+        max-width: 640px;
+    }
+
+    &__title {
+        margin: 10px;
+        font-weight: 900;
+    }
+
+    &__text {
+        width: 90%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    @include mq(medium) {
+        width: 45%;
+        margin: 40px auto;
+    }
+}
+
+.button--main-article {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: $main-text-color;
+    border-color: $main-text-color;
+    @include desktopHover{
+    &:hover {
+        color: $menu-color;
+        background-color: $main-text-color;
+    }
+}
+}

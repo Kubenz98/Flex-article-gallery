@@ -1,0 +1,18 @@
+$menu-color: #363636;
+$h1-and-footer-color: #5C9199;
+$main-color: #B8C9CC;
+$main-text-color: #ddd;
+$second-text-color: white;
+
+$main-font: 'Lato', sans-serif;
+
+$breakpoints: (
+    xsmall: '(min-width: 410px)',
+    small: '(min-width: 640px)',
+    medium: '(min-width: 768px)',
+    large: '(min-width: 1024px)',
+    xlarge: '(min-width: 1200px)',
+    xxlarge: '(min-width: 1440px)'
+);
+
+// font-family: 'Lato', sans-serif;

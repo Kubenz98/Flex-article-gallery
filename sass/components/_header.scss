@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    &__logo {
+        margin-top: 20px;
+        height: 60px;
+        @include mq(medium) {
+            height: 80px;
+        }
+        &-image {
+            height: 100%;
+        }
+    }
+}

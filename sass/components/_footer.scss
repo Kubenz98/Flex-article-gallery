@@ -1,0 +1,19 @@
+.footer {
+    display: flex;
+    background-color: $h1-and-footer-color;
+    color: $second-text-color;
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        padding: 10px;
+        &:nth-child(1) {
+            border-right: 2px solid $second-text-color;
+        }
+    }
+    &__title {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
